@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <h:head>
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <style>
+            .width{
+                width: 100%;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <center>
+            <table>
+                <h2><b>Expense Tracking</b></h2>
+            <h:form>
+                <div class="border ">
+                    <table class="float-left ml-5 mt-5">
+                    <tr>
+                        <td><h3 class="ml-5">Budget</h3></td>
+                    </tr> 
+                    <tr>
+                        <td>Category: </td>
+                        <td>
+                            <h:selectOneMenu  class="width" value="">                                
+                                <f:selectItem itemLabel="Catagory 1" itemValue="Catagory 1"/>
+                                <f:selectItem itemLabel="Catagory 2" itemValue="Catagory 2"/>
+                                <f:selectItem itemLabel="Catagory 3" itemValue="Catagory 3"/>
+                                <f:selectItem itemLabel="Catagory 4" itemValue="Catagory 4"/>
+                                <f:selectItem itemLabel="Catagory 5" itemValue="Catagory 5"/>
+                                <f:selectItem itemLabel="Catagory 6" itemValue="Catagory 6"/>
+                                <f:selectItem itemLabel="Catagory 7" itemValue="Catagory 7"/>
+                                <f:selectItem itemLabel="Catagory 8" itemValue="Catagory 8"/>
+                            </h:selectOneMenu>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>Amount:</td>
+                        <td><h:inputText  value=""/></td>
+                    </tr>
+                        <tr>
+                        <td></td>
+                        <td><h:commandButton class="btn btn-success mt-2" value="Save" action="result.xhtml"/></td>
+                    </tr>
+                </table>
+                </div>
+                <table class="mt-5">
+                    <tr>
+                        <td><h3 class="ml-5">Daily Cost</h3></td>
+                    </tr> 
+                    <tr>
+                        <td>Date:</td>
+                        <td><h:inputText value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Type: </td>
+                        <td>
+                            <h:selectOneMenu class="width" value="">                                
+                                <f:selectItem itemLabel="Cr card" itemValue="Cr card"/>
+                                <f:selectItem itemLabel="Cash" itemValue="Cash"/>
+                              </h:selectOneMenu>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Description:</td>
+                        <td><h:inputText id="description" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Category: </td>
+                        <td>
+                            <h:selectOneMenu class="width" value="">                                
+                                <f:selectItem itemLabel="Catagory 1" itemValue="Catagory 1"/>
+                                <f:selectItem itemLabel="Catagory 2" itemValue="Catagory 2"/>
+                                <f:selectItem itemLabel="Catagory 3" itemValue="Catagory 3"/>
+                                <f:selectItem itemLabel="Catagory 4" itemValue="Catagory 4"/>
+                                <f:selectItem itemLabel="Catagory 5" itemValue="Catagory 5"/>
+                                <f:selectItem itemLabel="Catagory 6" itemValue="Catagory 6"/>
+                                <f:selectItem itemLabel="Catagory 7" itemValue="Catagory 7"/>
+                                <f:selectItem itemLabel="Catagory 8" itemValue="Catagory 8"/>
+                            </h:selectOneMenu>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>Amount:</td>
+                        <td><h:inputText value=""/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><h:commandButton class="btn btn-success mt-2" value="Save" action="result.xhtml"/></td>
+                    </tr>
+                </table>
+            </h:form>
+            </table>
+        </center>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </h:body>
+</html>
+
